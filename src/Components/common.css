@@ -1,0 +1,60 @@
+.buttons {
+  margin: 2px;
+}
+.buttons .nav-btn1,
+.nav-btn2 {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.buttons .nav-btn2:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 11px;
+  right: 0px;
+  transition: 0.5s;
+}
+
+.buttons .nav-btn2:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.buttons .nav-btn2:hover:after {
+  opacity: 1;
+  right: 20px;
+}
+
+.buttons .nav-btn1:after {
+  content: "<<";
+  position: absolute;
+  opacity: 0;
+  top: 11px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.buttons .nav-btn1:hover {
+  padding-left: 24px;
+  padding-right: 8px;
+}
+
+.buttons .nav-btn1:hover:after {
+  opacity: 1;
+  left: 20px;
+}
